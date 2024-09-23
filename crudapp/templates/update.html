@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = 'container'>
+<h1>Update Items</h1>
+<form method="POST">
+    {% csrf_token %}
+    <div id = 'form-container'>
+    {{form.title}}
+    <input type = 'submit' value = 'Update' class = 'btn btn-primary'>
+</div>
+</form>
+</div>
+{% endblock %}
